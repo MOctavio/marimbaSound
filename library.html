@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Music Library</title>
+   </head>
+   <body>
+      <div id="library-page" data-role="page">
+         <header data-role="header">
+            <h1>Library files</h1>
+            <a href="#" id="update-button" data-icon="refresh">Update</a>
+            <div data-role="navbar">
+               <ul>
+                  <li><a href="#" data-icon="grid">Artists</a></li>
+                  <li><a href="songs.html" data-icon="music" class="ui-btn-active ui-state-persist">Songs</a></li>
+                  <li><a href="player.html" data-icon="gear">Player</a></li>
+               </ul>
+            </div><!-- /navbar -->
+         </header>
+         <div data-role="content">            
+            <ul id="files-list" data-role="listview" data-autodividers="true" data-filter="true" data-filter-theme="a" data-split-icon="delete">
+            </ul>
+         </div>
+         <div id="waiting-popup" data-role="popup" data-position-to="window" data-dismissible="false">
+            <header data-role="header">
+               <h1>Updating</h1>
+            </header>
+            <div data-role="content">
+               <p>Searching audio files, please wait...</p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

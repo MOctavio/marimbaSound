@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Audio Player</title>
+   </head>
+   <body>
+      <div id="player-page" data-role="page">
+         <header data-role="header">
+            <h1>Player</h1>
+            <div data-role="navbar">
+               <ul>
+                  <li><a href="#" data-icon="grid">Artists</a></li>
+                  <li><a href="library.html" data-icon="music">Songs</a></li>
+                  <li><a href="player.html" data-icon="gear" class="ui-btn-active ui-state-persist">Player</a></li>
+               </ul>
+            </div><!-- /navbar -->
+         </header>
+         <div data-role="content">
+            <div id="player">
+               <div id="media-info">
+                  <p>You're listnening to: <span id="media-name"></span></p>
+                  <p>Located at: <span id="media-path"></span></p>
+                  <div>
+                     Played time: <label id="media-played">-</label> of <label id="media-duration">-</label>
+                     <input type="range" name="time-slider" id="time-slider" value="0" min="0" max="100" data-highlight="true" />
+                  </div>
+               </div>   
+            </div>
+         </div>
+         <footer data-role="footer">
+            <div data-role="navbar">
+               <ul>
+                  <li><a href="#" id="player-play" title="Play / Pause" data-icon="play">Play/Pause</a></li>
+                  <li><a href="#" id="player-stop" title="Stop" data-icon="stop">Stop</a></li>
+               </ul>
+            </div><!-- /navbar -->
+         </footer>
+      </div>
+   </body>
+</html>

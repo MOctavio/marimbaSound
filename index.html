@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Marimba Sound</title>
+      <link rel="stylesheet" href="css/jquery.mobile.min.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/jquery.mobile.structure.min.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+      <script src="cordova.js"></script>
+      <script src="js/jquery.min.js"></script>      
+      <script src="js/jquery.mobile.min.js"></script>
+      <script src="js/appFile.js"></script>
+      <script src="js/utility.js"></script>
+      <script src="js/jdataview.js"></script>
+      <script src="js/player.js"></script>
+      <script src="js/application.js"></script>
+      <script>
+         $(document).on('pagebeforecreate orientationchange', Application.updateIcons);
+         $(document).one('deviceready', Application.initApplication);
+      </script>
+   </head>
+   <body>
+      <div id="index-page" data-role="page">
+         <div id="content" data-role="content">
+            <canvas id="myCanvas">
+               Your browser does not support the HTML5 canvas tag. Wait while the application loads.
+            </canvas>  
+            <script  src="js/marimba.canvas.js"></script>
+         </div>
+         <footer data-role="footer">
+            <h3 id="copyright-title">
+               Creative Commons License.
+            </h3>
+         </footer>
+         <div id="content" data-role="content">
+            <article>
+               <br><br>
+               <p>
+                  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Marimba Sound</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/MOctavio" property="cc:attributionName" rel="cc:attributionURL">Mario Octavio Jimenez</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+               </p>
+               <p>
+                  Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/AurelioDeRosa/Audero-Audio-Player" rel="dct:source">https://github.com/AurelioDeRosa/Audero-Audio-Player</a>.
+               </p>
+               <p>
+                  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="./images/license.png" /></a>
+               </p>
+            </article>
+         </div>
+      </div>
+   </body>
+</html>
